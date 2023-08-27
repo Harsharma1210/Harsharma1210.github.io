@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lilita+One&display=swap');
 
 @viewport {
     width: device-width;
@@ -7,7 +7,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lilita One', cursive;
+    font-family: 'Lilita One', serif;
 }
 
 body {
@@ -16,19 +16,21 @@ body {
 }
 
 .header{
-    height: 100px;
+    height: 70px;
     width: 100%;
-    max-width: 1000px;
+    max-width: 100%;
+    background-color: aquamarine;
     display: flex;
     padding: 0 12px;
-    margin: 0 auto;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .nameLogo{
-    font-size: 28px;
+    font-family: 'Dancing Script';
+    font-size: 30px;
+    color: black;
 }
 
 .header-list {
@@ -37,8 +39,32 @@ body {
 }
 
 .header-list li {
+    color: black;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 24px;
     display: inline-flex;
+}
+
+.mainContent {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.sandBackground_1 {
+    width: 15%;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.mainBody {
+    width: 70%;
+    text-align: center;
+}
+
+.sandBackground_2 {
+    width: 15%;
+    background-color: antiquewhite;
+    color: black;
 }
