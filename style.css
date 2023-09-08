@@ -13,6 +13,8 @@
 body {
     background-image: url("img/Beach Background.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #eebb84;
 }
 
 .header{
@@ -23,6 +25,7 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .nameLogo{
@@ -65,4 +68,13 @@ body {
 .mainBody {
     width: 70%;
     text-align: center;
+    border-radius: 15px;
+    background-color: #eebb84;
+}
+
+.mainPicture {
+    margin-top: 30px;
+    border-radius: 15px;
+    width: auto;
+    height: 300px;
 }
