@@ -11,17 +11,15 @@
 }
 
 body {
-    background-color: #353535;
-    color: whitesmoke
+    background-image: url("img/Beach Background.jpg");
+    background-size: cover;
 }
 
 .header{
     height: 70px;
-    width: 100%;
-    max-width: 100%;
-    background-color: aquamarine;
+    width: 100vw;
+    max-width: 100vw;
     display: flex;
-    padding: 0 12px;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
@@ -31,6 +29,7 @@ body {
     font-family: 'Dancing Script';
     font-size: 30px;
     color: black;
+    font-weight: bold;
 }
 
 .header-list {
@@ -52,19 +51,11 @@ body {
     justify-content: center;
 }
 
-.sandBackground_1 {
+.sandBackground_1, .sandBackground_2 {
     width: 15%;
-    background-color: antiquewhite;
-    color: black;
 }
 
 .mainBody {
     width: 70%;
     text-align: center;
-}
-
-.sandBackground_2 {
-    width: 15%;
-    background-color: antiquewhite;
-    color: black;
 }
