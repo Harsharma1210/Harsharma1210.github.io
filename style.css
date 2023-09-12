@@ -17,15 +17,17 @@ body {
     background-color: #eebb84;
 }
 
+a:visited {
+    color: black;
+}
+
 .header{
     height: 70px;
-    width: 100vw;
-    max-width: 100vw;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .nameLogo{
@@ -74,7 +76,28 @@ body {
 
 .mainPicture {
     margin-top: 30px;
+    margin-bottom: 15px;
     border-radius: 15px;
     width: auto;
     height: 300px;
 }
+
+.introParagraph {
+    font-size: 30px;
+    text-align: center;
+}
+
+.rutgers:hover {
+    color: rgba(255, 0, 0, 0.801)
+}
+
+/* FOR DIFFERENT DEVICES */
+
+/*@media screen and (max-width: 900px) {
+    .header {
+        margin-left: 15px;
+    }
+    
+
+}
+*/
