@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lilita+One&family=IBM+Plex+Serif&display=swap');
 
 @viewport {
     width: device-width;
@@ -11,10 +11,9 @@
 }
 
 body {
-    background-image: url("img/Beach Background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #eebb84;
+    background-color: #cdddde;
 }
 
 a:visited {
@@ -23,11 +22,17 @@ a:visited {
 
 .header{
     height: 70px;
-    display: flex;
+    display: inline-flex;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-around;
-    margin-bottom: 15px;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 20px;
+    margin-top: 12px;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 70px);
 }
 
 .nameLogo{
@@ -35,6 +40,8 @@ a:visited {
     font-size: 35px;
     color: black;
     font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .header-list {
@@ -61,45 +68,46 @@ a:visited {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    margin-top: 105px;
 }
 
-.sandBackground_1, .sandBackground_2 {
-    width: 15%;
-}
-
-.mainBody {
-    width: 70%;
-    text-align: center;
-    border-radius: 15px;
-    background-image: url("img/Sandy Shocks.jpg");
-    background-size: cover;
+.pictureContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .mainPicture {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 15px;
-    border-radius: 15px;
+    border-radius: 15px; /* THIS IS WHAT GIVES THE PICTURE CURVED EDGES */
     border-color: black;
-    width: auto;
-    height: 300px;
+    width: 55%;
+    height: auto;
 }
 
-.introParagraph {
-    font-size: 30px;
+.introContainer {
+    width: 50%;
+}
+
+.harsh {
     text-align: center;
+    padding-top: 10%;
+    font-size: 4vw;
+    font-family: 'IBM Plex Serif';
 }
 
-.rutgers:hover {
-    color: rgba(255, 0, 0, 0.801)
+.opportunitySearching {
+    text-align: center;
+    font-size: 3vw;
+    padding-top: 10%;
+    font-family: 'IBM Plex Serif';
+    font-weight: bold;
 }
+
 
 /* FOR DIFFERENT DEVICES */
-
-/*@media screen and (max-width: 900px) {
-    .header {
-        margin-left: 15px;
-    }
+@media only screen and (max-width: 900px) {
     
-
 }
-*/
