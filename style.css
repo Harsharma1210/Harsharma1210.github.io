@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lilita+One&family=IBM+Plex+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lilita+One&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 @viewport {
     width: device-width;
@@ -8,12 +8,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Lilita One', serif;
+    color: #DE9E48;
 }
 
 body {
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #cdddde;
+    background-color: #372c2e;
 }
 
 a:visited {
@@ -38,7 +39,7 @@ a:visited {
 .nameLogo{
     font-family: 'Dancing Script';
     font-size: 35px;
-    color: black;
+    color: #FFFFFF;
     font-weight: bold;
     padding-left: 15px;
     padding-right: 15px;
@@ -50,7 +51,7 @@ a:visited {
 }
 
 .header-list li {
-    color: black;
+    color: #FFFFFF;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 24px;
@@ -60,7 +61,7 @@ a:visited {
 .header-list li:hover {
     border-radius: 10px;
     color: whitesmoke;
-    background-color: black;
+    background-color: #7a431d;
     cursor: pointer;
 }
 
@@ -71,41 +72,42 @@ a:visited {
     margin-top: 105px;
 }
 
-.pictureContainer {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.mainPicture {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 15px; /* THIS IS WHAT GIVES THE PICTURE CURVED EDGES */
-    border-color: black;
-    width: 55%;
-    height: auto;
-}
-
 .introContainer {
     width: 50%;
+    margin-left: 50px;
 }
 
 .harsh {
-    text-align: center;
-    padding-top: 10%;
+    text-align: left;
+    padding-top: 5%;
     font-size: 4vw;
     font-family: 'IBM Plex Serif';
 }
 
 .opportunitySearching {
-    text-align: center;
-    font-size: 3vw;
-    padding-top: 10%;
+    text-align: left;
+    font-size: 2vw;
+    padding-top: 15px;
     font-family: 'IBM Plex Serif';
-    font-weight: bold;
+    font-weight: 200;
 }
 
+.pictureContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 45px;
+}
+
+.mainPicture {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 50%; /* THIS IS WHAT GIVES THE PICTURE CURVED EDGES */
+    border-color: black;
+    width: 75%;
+    height: auto;
+}
 
 /* FOR DIFFERENT DEVICES */
 @media only screen and (max-width: 900px) {
