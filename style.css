@@ -7,7 +7,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lilita One', serif;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: bold;
     color: #DE9E48;
 }
 
@@ -69,12 +70,12 @@ a:visited {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    margin-top: 105px;
+    margin-top: 150px;
 }
 
 .introContainer {
     width: 50%;
-    margin-left: 50px;
+    margin-left: 10%;
 }
 
 .harsh {
@@ -86,7 +87,7 @@ a:visited {
 
 .opportunitySearching {
     text-align: left;
-    font-size: 2vw;
+    font-size: 1.75vw;
     padding-top: 15px;
     font-family: 'IBM Plex Serif';
     font-weight: 200;
@@ -97,16 +98,14 @@ a:visited {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-right: 45px;
+    margin-right: 4.5%;
 }
 
 .mainPicture {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 50%; /* THIS IS WHAT GIVES THE PICTURE CURVED EDGES */
+    border-radius: 50%; 
     border-color: black;
-    width: 75%;
     height: auto;
+    width: 75%;
 }
 
 /* FOR DIFFERENT DEVICES */
