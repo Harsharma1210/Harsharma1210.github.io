@@ -55,8 +55,9 @@ a:visited {
     color: #FFFFFF;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 24px;
+    font-size: 1.5vw;
     display: inline-flex;
+    border-radius: 10px;
 }
 
 .header-list li:hover {
@@ -66,16 +67,18 @@ a:visited {
     cursor: pointer;
 }
 
-.mainContent {
+.mainContent_1 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     margin-top: 150px;
+    position: relative;
 }
 
 .introContainer {
     width: 50%;
-    margin-left: 10%;
+    margin-left: 12%;
+    position: relative;
 }
 
 .harsh {
@@ -93,19 +96,40 @@ a:visited {
     font-weight: 200;
 }
 
+.socialMedia {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    font-size: 2.2vw;
+    justify-content: left;
+}
+
+.mailSymbol {
+    padding-right: 12.5%;
+}
+
+.githubSymbol {
+    padding-right: 12.5%;
+}
+
+.linkedinSymbol {
+    padding-right: 12.5%;
+}
+
 .pictureContainer {
     width: 50%;
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-right: 4.5%;
+    margin-right: 6%;
 }
 
 .mainPicture {
     border-radius: 50%; 
     border-color: black;
     height: auto;
-    width: 75%;
+    width: 80%;
 }
 
 /* FOR DIFFERENT DEVICES */
