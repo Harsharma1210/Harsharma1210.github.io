@@ -88,12 +88,20 @@ a:visited {
     font-family: 'IBM Plex Serif';
 }
 
-.opportunitySearching {
+.passionateEngineer {
     text-align: left;
     font-size: 1.75vw;
     padding-top: 15px;
     font-family: 'IBM Plex Serif';
     font-weight: 200;
+}
+
+.opportunitySearching {
+    text-align: left;
+    font-size: 1.75vw;
+    padding-top: 7%;
+    font-family: 'IBM Plex Serif';
+    font-weight: 400;
 }
 
 .socialMedia {
@@ -133,6 +141,6 @@ a:visited {
 }
 
 /* FOR DIFFERENT DEVICES */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 992px) {
     
 }
