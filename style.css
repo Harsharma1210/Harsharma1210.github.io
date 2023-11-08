@@ -39,7 +39,7 @@ body {
 
 .nameLogo{
     font-family: 'Dancing Script';
-    font-size: 35px;
+    font-size: 2.1875vw;
     color: #DE9E48;
     font-weight: bold;
     padding-left: 15px;
@@ -64,15 +64,52 @@ body {
 .header-list li:hover {
     border-radius: 10px;
     color: #ffffff;
-    /*background-color: #7a431d;*/
     cursor: pointer;
+}
+
+#contactMe {
+    padding-right: 20px;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    position: relative;
+    width: 4vw;
+    height: 1vw;
+    border-radius: 50px;
+    outline: none;
+    background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+    background-size: cover;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1vw;
+    width: 2vw;
+    background-color: #DE9E48;
+    border-radius: 50px;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: translate(100%);
+}
+
+input[type="checkbox"]:checked{
+    background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
 }
 
 .mainContent_1 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 10%;
     position: relative;
 }
 
@@ -143,7 +180,24 @@ body {
 
 /* FOR DIFFERENT DEVICES */
 @media only screen and (max-width: 992px) {
-    .header-list {
+    #aboutMe {
         display: none;
     }
+
+    #contactMe {
+        display: none;
+    }
+
+    #myProjects {
+        display: none;
+    }
+
+    input[type="checkbox"] {
+        height: 35px;
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width: 406px) {
+    /* FIX THE HARSH SHARMA ISSUE */
 }
