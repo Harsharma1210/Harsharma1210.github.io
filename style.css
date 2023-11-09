@@ -9,13 +9,22 @@
     padding: 0;
     font-family: 'IBM Plex Serif', serif;
     font-weight: bold;
-    color: #DE9E48;
 }
 
 body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #372c2e;
+    --text-color: rgba(222, 158, 72, 1);
+    --background-color: rgba(55, 44, 46, 1);
+    --hover-color: rgba(255, 255, 255, 1);
+    --border-color: rgba(0, 0, 0, 1);
+    
+    background-color: var(--background-color);
+}
+
+body.light {
+    --text-color: rgba(72, 137, 222, 1);
+    --background-color: rgba(44, 55, 53, 1);
+    --hover-color: rgba(0, 0, 0, 1);
+    --border-color: rgba(255, 255, 255, 1);
 }
 
 .harshPageLink {
@@ -35,15 +44,16 @@ body {
     position: fixed;
     top: 0;
     width: calc(100% - 70px);
+    color: var(--text-color);
 }
 
 .nameLogo{
     font-family: 'Dancing Script';
     font-size: 2.1875vw;
-    color: #DE9E48;
     font-weight: bold;
     padding-left: 15px;
     padding-right: 15px;
+    color: var(--text-color);
 }
 
 .header-list {
@@ -52,18 +62,16 @@ body {
 }
 
 .header-list li {
-    color: #DE9E48;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 1.5vw;
     display: inline-flex;
     border-radius: 10px;
-
 }
 
 .header-list li:hover {
     border-radius: 10px;
-    color: #ffffff;
+    color: var(--hover-color);
     cursor: pointer;
 }
 
@@ -78,7 +86,7 @@ input[type="checkbox"] {
     height: 1vw;
     border-radius: 50px;
     outline: none;
-    background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+    background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
     background-size: cover;
 }
 
@@ -86,23 +94,23 @@ input[type="checkbox"]:hover {
     cursor: pointer;
 }
 
-input[type="checkbox"]::before {
+input[type="checkbox"]::after {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     height: 1vw;
     width: 2vw;
-    background-color: #DE9E48;
+    background-color: var(--text-color); /* THIS IS ACTUALLY THE COLOR OF THE BUTTON */
     border-radius: 50px;
 }
 
-input[type="checkbox"]:checked::before {
-    transform: translate(100%);
+input[type="checkbox"]:checked::after {
+    transform: translate(-100%);
 }
 
 input[type="checkbox"]:checked{
-    background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+    background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
 }
 
 .mainContent_1 {
@@ -111,6 +119,7 @@ input[type="checkbox"]:checked{
     justify-content: center;
     margin-top: 10%;
     position: relative;
+    color: var(--text-color);
 }
 
 .introContainer {
@@ -151,16 +160,27 @@ input[type="checkbox"]:checked{
     justify-content: left;
 }
 
+.socialMedia i:hover {
+    color: var(--hover-color);
+}
+
 .mailSymbol {
     padding-right: 12.5%;
+    color: var(--text-color);
 }
 
 .githubSymbol {
     padding-right: 12.5%;
+    color: var(--text-color);
 }
 
 .linkedinSymbol {
     padding-right: 12.5%;
+    color: var(--text-color);
+}
+
+.instagramSymbol {
+    color: var(--text-color);
 }
 
 .pictureContainer {
@@ -173,7 +193,7 @@ input[type="checkbox"]:checked{
 
 .mainPicture {
     border-radius: 50%; 
-    border-color: black;
+    border-color: var(--border-color);
     height: auto;
     width: 80%;
 }
