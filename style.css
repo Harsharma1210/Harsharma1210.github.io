@@ -87,7 +87,7 @@ input[type="checkbox"] {
     height: 1vw;
     border-radius: 50px;
     outline: none;
-    background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+    background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
     background-size: cover;
 }
 
@@ -95,23 +95,23 @@ input[type="checkbox"]:hover {
     cursor: pointer;
 }
 
-input[type="checkbox"]::after {
+input[type="checkbox"]::before {
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     height: 1vw;
     width: 2vw;
     background-color: var(--text-color); /* THIS IS ACTUALLY THE COLOR OF THE BUTTON */
     border-radius: 50px;
 }
 
-input[type="checkbox"]:checked::after {
-    transform: translate(-100%);
+input[type="checkbox"]:checked::before {
+    transform: translate(100%);
 }
 
 input[type="checkbox"]:checked{
-    background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+    background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
 }
 
 .mainContent_1 {
@@ -226,7 +226,7 @@ input[type="checkbox"]:checked{
         width: 8vw;
     }
 
-    #mode::after {
+    #mode::before {
         height: 4vw;
         width: 4vw;
         border-radius: 50%;
@@ -250,7 +250,7 @@ input[type="checkbox"]:checked{
         width: 16vw;
     }
 
-    #mode::after {
+    #mode::before {
         height: 8vw;
         width: 8vw;
         border-radius: 50%;
