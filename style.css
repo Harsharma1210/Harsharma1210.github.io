@@ -232,10 +232,30 @@ input[type="checkbox"]:checked{
     }
 }
 
-@media only screen and (max-width: 406px) {
+@media only screen and (max-width: 430px) {
     /* FIX THE HARSH SHARMA ISSUE */
+    .header {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+    }
+
+    .nameLogo {
+        font-size: 8vw;
+    }
 
     .mainContent_1 {
         margin-top: 25%;
+    }
+
+    #mode {
+        height: 8vw;
+        width: 16vw;
+    }
+
+    #mode::after {
+        height: 8vw;
+        width: 8vw;
+        border-radius: 50%;
     }
 }
