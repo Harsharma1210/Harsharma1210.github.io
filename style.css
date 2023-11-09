@@ -200,6 +200,14 @@ input[type="checkbox"]:checked{
 
 /* FOR DIFFERENT DEVICES */
 @media only screen and (max-width: 992px) {
+    .nameLogo {
+        font-size: 4vw;
+    }
+    
+    .mainContent_1 {
+        margin-top: 15%;
+    }
+
     #aboutMe {
         display: none;
     }
@@ -212,12 +220,22 @@ input[type="checkbox"]:checked{
         display: none;
     }
 
-    input[type="checkbox"] {
-        height: 35px;
-        width: 70px;
+    #mode {
+        height: 4vw;
+        width: 8vw;
+    }
+
+    #mode::after {
+        height: 4vw;
+        width: 4vw;
+        border-radius: 50%;
     }
 }
 
 @media only screen and (max-width: 406px) {
     /* FIX THE HARSH SHARMA ISSUE */
+
+    .mainContent_1 {
+        margin-top: 25%;
+    }
 }
