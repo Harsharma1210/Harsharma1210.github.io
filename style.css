@@ -244,10 +244,6 @@ input[type="checkbox"]:checked{
         font-size: 8vw;
     }
 
-    .mainContent_1 {
-        margin-top: 25%;
-    }
-
     #mode {
         height: 8vw;
         width: 16vw;
@@ -257,5 +253,47 @@ input[type="checkbox"]:checked{
         height: 8vw;
         width: 8vw;
         border-radius: 50%;
+    }
+
+    .mainContent_1 {
+        margin-top: 25%;
+        flex-direction: column-reverse;
+    }
+
+    .pictureContainer {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .introContainer {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .harsh {
+        text-align: center;
+        padding-top: 10%;
+        font-size: 8vw;
+    }
+
+    .passionateEngineer {
+        text-align: center;
+        font-size: 5vw;
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .opportunitySearching {
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .socialMedia {
+        justify-content: center;
+        font-size: 6vw;
+        bottom: unset;
+        padding-top: 10%;
     }
 }
